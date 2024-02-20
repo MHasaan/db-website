@@ -5,6 +5,9 @@ const SearchHeader = () => {
         fontSize: '16px',
         fontWeight: 'bold',
         color: '#333',
+        position: 'relative',
+        top: '15px',
+        left: '30px',
         /* Add other styles as needed */
     };
 

@@ -6,9 +6,7 @@ import Form from './Search/Input';
 function App() {
   return (
     <div className="App">
-      
       <SearchHeader/>
-      
       <Selecting/>
       <Form/>
     </div>

@@ -15,13 +15,12 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     top:"-10px",
-    borderRadius: '20px', // corrected here
-    height: '30px',
-    width: '90px',
+    height: '30px', // decreased height
+    width: '90px', // increased width
     padding: '0',
-    backgroundColor: '#336699', // light blue
+    backgroundColor: '#336699', // darker blue
     '&:hover': {
-      backgroundColor: '#26547c', // color when hovered
+      backgroundColor: '#26547c', // even darker when hovered
     },
   },
 }));
@@ -43,7 +42,14 @@ const Form = () => {
           style: { height: '35px' },
         }}
       />
-      <Button variant="contained" type="submit" className={classes.button}>
+      <Button 
+        variant="contained" 
+        type="submit" 
+        className={classes.button}
+        sx={{
+          borderRadius: '20px', // This will override the MUI styling
+        }}
+      >
         Submit
       </Button>
     </Box>

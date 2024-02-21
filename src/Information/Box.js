@@ -16,8 +16,8 @@ const BoxComponent = () => {
                 marginTop: '60px', // This will move the box down
             }}
         >
-            <Name_etc label="First Name" placeholder="Enter your first name" top={100} left={2} />
-            <Name_etc label="Last Name" placeholder="Enter your last name" top={150} left={2} />
+            <Name_etc label="First Name" placeholder="Enter your first name" top={10} left={2} />
+            <Name_etc label="Last Name" placeholder="Enter your last name" top={20} left={2} />
             {/* Add more Name_etc components as needed */}
         </Box>
     );

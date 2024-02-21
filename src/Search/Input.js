@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     position: 'absolute',
     top: '15px',
-    left: '517px',
+    left: '527px',
     transform: 'translate(-50%, 0)',
     display: 'flex',
     flexDirection: 'row',
@@ -15,13 +15,13 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     top:"-10px",
-    borderRadius: '50%',
-    height: '40px',
-    width: '70px',
+    borderRadius: '20px', // corrected here
+    height: '30px',
+    width: '90px',
     padding: '0',
-    backgroundColor: '#d7e6f7', // light blue
+    backgroundColor: '#336699', // light blue
     '&:hover': {
-      backgroundColor: '#d7e8f7', // color when hovered
+      backgroundColor: '#26547c', // color when hovered
     },
   },
 }));
@@ -35,7 +35,7 @@ const Form = () => {
         id="outlined-basic"
         label="Enter to Search"
         variant="outlined"
-        style={{ marginRight: '10px', height: '55px', width: '200px' }} // reduced height and width
+        style={{ marginRight: '10px', height: '50px', width: '200px' }}
         InputLabelProps={{ 
           style: { top: '-10px' }, 
         }}

@@ -9,7 +9,7 @@ const Selecting =()=> {
         top: '15px', // adjust as needed
         left: '120px', // adjust as needed
         width: 250,
-        height: 30,
+        height: 35,
       }}
     >
       <MenuItem value={1}>Red</MenuItem>

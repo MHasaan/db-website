@@ -6,7 +6,7 @@ const Selecting =()=> {
       <Select
       sx={{
         position: 'absolute', // or 'relative'
-        top: '15px', // adjust as needed
+        top: '80px', // adjust as needed
         left: '120px', // adjust as needed
         width: 250,
         height: 35,

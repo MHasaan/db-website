@@ -18,7 +18,8 @@ const BoxComponent = () => {
         >
             <Name_etc label="First Name" placeholder="Enter your first name" top={10} left={2} />
             <Name_etc label="Last Name" placeholder="Enter your last name" top={20} left={2} />
-            {/* Add more Name_etc components as needed */}
+            <Name_etc label="Phone No" placeholder="Enter your Phone No." top={30} left={2} />
+            <Name_etc label="Address" placeholder="Enter your Address" top={40} left={2} />
         </Box>
     );
 };

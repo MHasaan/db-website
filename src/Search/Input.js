@@ -5,7 +5,7 @@ import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles((theme) => ({
   root: {
     position: 'absolute',
-    top: '15px',
+    top: '80px',
     left: '527px',
     transform: 'translate(-50%, 0)',
     display: 'flex',

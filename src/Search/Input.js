@@ -13,16 +13,6 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  button: {
-    top:"-10px",
-    height: '30px', // decreased height
-    width: '90px', // increased width
-    padding: '0',
-    backgroundColor: '#336699', // darker blue
-    '&:hover': {
-      backgroundColor: '#26547c', // even darker when hovered
-    },
-  },
 }));
 
 const Form = () => {

@@ -1,6 +1,7 @@
 import React from 'react';
-import { TextField, Button, Box } from '@mui/material';
+import { TextField, Box } from '@mui/material';
 import { makeStyles } from '@mui/styles';
+import { Button } from '@nextui-org/react'; // import Next UI Button
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,12 +34,11 @@ const Form = () => {
         }}
       />
       <Button 
-        variant="contained" 
-        type="submit" 
-        className={classes.button}
-        sx={{
-          borderRadius: '20px', // This will override the MUI styling
-        }}
+        color="primary" 
+        variant="solid" 
+        size="large" 
+        auto 
+        style={{ marginTop: '-15px' }} 
       >
         Submit
       </Button>

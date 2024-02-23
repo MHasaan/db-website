@@ -7,7 +7,7 @@ const BoxComponent = () => {
         <Box 
             sx={{
                 border: 1,
-                borderColor: '#00008B',
+                borderColor: '#000000',
                 borderRadius: 2,
                 p: 2,
                 m: 2,

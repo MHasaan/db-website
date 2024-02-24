@@ -43,50 +43,37 @@ export default function App() {
             }}
           >
             <DropdownItem
-              key="autoscaling"
-              description="ACME scales apps to meet user demand, automagically, based on load."
+              key="Inventory Overview"
+              description="Quickly assess stock levels, reorder points, and other essential data."
               startContent={icons.scale}
             >
-              Autoscaling
+              Inventory Overview
             </DropdownItem>
             <DropdownItem
               key="usage_metrics"
-              description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
+              description="Generate Reports and track usage metrics."
               startContent={icons.activity}
             >
               Usage Metrics
             </DropdownItem>
+
             <DropdownItem
-              key="production_ready"
-              description="ACME runs on ACME, join us and others serving requests at web scale."
-              startContent={icons.flash}
-            >
-              Production Ready
-            </DropdownItem>
-            <DropdownItem
-              key="99_uptime"
-              description="Applications stay on the grid with high availability and high uptime guarantees."
+              key="Product Management"
+              description="Add new products, updating existing product details, and managing product categories."
               startContent={icons.server}
             >
-              +99% Uptime
-            </DropdownItem>
-            <DropdownItem
-              key="supreme_support"
-              description="Overcome any challenge with a supporting team ready to respond."
-              startContent={icons.user}
-            >
-              +Supreme Support
+              Product Management
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>
         <NavbarItem isActive>
           <Link href="#" aria-current="page">
-            Customers
+            Reorder Supplies
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
-            Integrations
+            Contact Support
           </Link>
         </NavbarItem>
         <NavbarContent justify="end">

@@ -53,10 +53,10 @@ const BoxComponent = () => {
                         inputProps={{ 'aria-label': 'controlled' }}
                     />
                 }
-                label="Item Set for Recording"
+                label="Item Marked for Reording"
                 sx={{
                     position: 'absolute',
-                    top: 330, // Adjust this value to move the checkbox up or down
+                    top: 325, // Adjust this value to move the checkbox up or down
                     left: 880, // Adjust this value to move the checkbox left or right
                 }}
             />

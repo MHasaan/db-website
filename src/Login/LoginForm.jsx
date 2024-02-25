@@ -65,9 +65,6 @@ function LoginForm({ onLoginForm }) {
       }, 100); // Show the error message after 1 second
       return;
     }
-
-    
-    
     clearTimeout(errorTimeoutRef.current);
     setErrorMessage('');
     onLoginForm();
@@ -79,7 +76,7 @@ function LoginForm({ onLoginForm }) {
         <Components.Form onSubmit={handleSignUp}>
           <Components.Title>Create Account</Components.Title>
           <GoogleLogin
-            clientId="460649283968-p85jgr457r0eq8rspegj4kqs9lo0bh2u.apps.googleusercontent.com"
+            clientId="315071719807-36hg8htumglhmkr1bbbhni8rmuhsngio.apps.googleusercontent.com"
             buttonText="Register with Google"
             onSuccess={responseGoogle}
             onFailure={responseGoogle}

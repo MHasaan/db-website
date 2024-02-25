@@ -27,13 +27,7 @@ function LoginForm({ onLoginForm }) {
   const [errorMessage, setErrorMessage] = React.useState('');
   const errorTimeoutRef = useRef(null);
 
-  const responseGoogle = (response) => {
-    console.log(response);
-    if (response.profileObj) {
-      onLoginForm();
-    }
-  };
-
+  
   const handleSignUp = (event) => {
     event.preventDefault();
     const name = event.target.elements.name.value;
@@ -75,13 +69,6 @@ function LoginForm({ onLoginForm }) {
       <Components.SignUpContainer signingIn={signIn}>
         <Components.Form onSubmit={handleSignUp}>
           <Components.Title>Create Account</Components.Title>
-          <GoogleLogin
-            clientId="315071719807-36hg8htumglhmkr1bbbhni8rmuhsngio.apps.googleusercontent.com"
-            buttonText="Register with Google"
-            onSuccess={responseGoogle}
-            onFailure={responseGoogle}
-            cookiePolicy={'single_host_origin'}
-          />
           <Components.Input name="name" type="text" />
           <Components.Input name="email" type="email" />
           <Components.Input name="password" type="password" />
@@ -91,13 +78,6 @@ function LoginForm({ onLoginForm }) {
       <Components.SignInContainer signingIn={signIn}>
         <Components.Form onSubmit={handleSignIn}>
           <Components.Title>Sign in</Components.Title>
-          <GoogleLogin
-            clientId="460649283968-p85jgr457r0eq8rspegj4kqs9lo0bh2u.apps.googleusercontent.com"
-            buttonText="Login with Google"
-            onSuccess={responseGoogle}
-            onFailure={responseGoogle}
-            cookiePolicy={'single_host_origin'}
-          />
           <Components.Input name="email" type="email" />
           <Components.Input name="password" type="password" />
           <Components.Anchor href="#">Forgot your password?</Components.Anchor>

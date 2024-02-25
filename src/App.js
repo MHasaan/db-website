@@ -6,23 +6,26 @@ import Form from './Search/Input';
 import BoxComponent from './Information_Box/Box';
 import ResponsiveAppBar from './App_Bar/App_Bar';
 import LoginForm from './Login/LoginForm';
+import './index.css';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   if (!isLoggedIn) {
-    return <LoginForm onLoginForm={() => setIsLoggedIn(true)} />;
+    return (
+      <div className="loginForm">
+        <LoginForm onLoginForm={() => setIsLoggedIn(true)} />
+      </div>
+    );
   }
 
   return (
     <NextUIProvider>
-      <div className="App">
         <ResponsiveAppBar/>
         <SearchHeader/>
         <Selecting/>
         <Form/>
         <BoxComponent/>
-      </div>
     </NextUIProvider>
   );
 }

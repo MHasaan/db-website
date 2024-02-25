@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+.loginForm  {
   background: #f6f5f7;
   display: flex;
   justify-content: center;
@@ -15,8 +15,12 @@ body {
   margin: -20px 0 50px;
 }
 
+
+
 .google-button {
   margin-bottom: 20px; 
   border-radius: 50px; 
 
 }
+
+

@@ -2,7 +2,7 @@ import React from 'react';
 import { NextUIProvider, Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu } from '@nextui-org/react';
 import { ChevronDown, Lock, Activity, Flash, Server, TagUser, Scale } from './Icons.jsx';
 
-export default function App() {
+export default function ResponsiveAppBar() {
   const icons = {
     chevron: <ChevronDown fill="currentColor" size={16} />,
     scale: <Scale className="text-warning" fill="currentColor" size={30} />,

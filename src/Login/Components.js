@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
+import { keyframes } from 'styled-components';
+
 export const Container = styled.div`
-  background-color: #fff;
+  background-color: #00000;
   border-radius: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
@@ -42,7 +44,7 @@ export const SignInContainer = styled.div`
 `;
 
 export const Form = styled.form`
-  background-color: #ffffff;
+  background-color: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,8 +69,8 @@ export const Input = styled.input`
 
 export const Button = styled.button`
   border-radius: 20px;
-  border: 1px solid #ff4b2b;
-  background-color: #ff4b2b;
+  border: 1px solid #4681f4;
+  background-color: #4681f4;
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
@@ -109,13 +111,17 @@ export const OverlayContainer = styled.div`
     props.signingIn !== true ? `transform: translateX(-100%);` : null}
 `;
 
+
+const movingGradient = keyframes`
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+`;
+
 export const Overlay = styled.div`
-  background: #C8A2C8;
-  background: -webkit-linear-gradient(to right, #C8A2C8, #C8A2C8);
-  background: linear-gradient(to right, #C8A2C8, #C8A2C8);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 0;
+  background: linear-gradient(270deg, #4681f4, #36454F);
+  background-size: 200% 200%;
+  animation: ${movingGradient} 3s ease infinite; /* Adjust the speed as needed */
   color: #ffffff;
   position: relative;
   left: -100%;
@@ -125,6 +131,10 @@ export const Overlay = styled.div`
   transition: transform 0.6s ease-in-out;
   ${props => (props.signingIn !== true ? `transform: translateX(50%);` : null)}
 `;
+
+
+
+
 
 
 

@@ -5,7 +5,7 @@
 }
 
 .loginForm  {
-  background: #f6f5f7;
+  background: #000000; /* Changed this to black */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,14 +13,7 @@
   font-family: "Montserrat", sans-serif;
   height: 100vh;
   margin: -20px 0 50px;
-}
-
-
-
-.google-button {
-  margin-bottom: 20px; 
-  border-radius: 50px; 
-
+  color: #ffffff; /* Added this to make text visible on the black background */
 }
 
 

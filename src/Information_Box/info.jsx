@@ -13,7 +13,7 @@ const Name_etc = ({ label, placeholder, top, left }) => {
   const labelStyles = {
     fontSize: '16px',
     fontWeight: 'bold',
-    color: '#333',
+    color: '#edeffd',
     marginRight: '10px', // Add space between label and text field
     position: 'relative',
     top: '-10px', // Adjust this value as needed to move Text up or down

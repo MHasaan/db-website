@@ -42,20 +42,26 @@ const BoxComponent = () => {
             },
         }}
         >
-            <Name_etc label="First Name" placeholder="Enter your first name" top={10} left={2} />
-            <Name_etc label="Last Name" placeholder="Enter your last name" top={-40} left={400} />
-            <Name_etc label="Weight" placeholder="Enter Weight" top={-90} left={850} />
-            <Name_etc label="Phone No" placeholder="Enter your Phone No." top={-70} left={2} />
-            <Name_etc label="Address" placeholder="Enter your Address" top={-120} left={400} />
-            <Name_etc label="Remaining Stock" placeholder="Stock Values" top={-170} left={850} />
-            <Name_etc label="Company Name" placeholder="Company Name" top={-140} left={2} />
-            <Name_etc label="Product No" placeholder="Enter Product Number" top={-190} left={400} />
+            <Name_etc label="First Name" placeholder="Enter your first name" top={17} left={2} />
+            <Name_etc label="Last Name" placeholder="Enter your last name" top={-19} left={400} />
+            <Name_etc label="Weight" placeholder="Enter Weight" top={-53} left={850} />
+            <Name_etc label="Phone No" placeholder="Enter your Phone No." top={-20} left={2} />
+            <Name_etc label="Address" placeholder="Enter your Address" top={-54} left={400} />
+            <Name_etc label="Remaining Stock" placeholder="Stock Values" top={-82} left={850} />
+            <Name_etc label="Company Name" placeholder="Company Name" top={-60} left={2} />
+            <Name_etc label="Product No" placeholder="Enter Product Number" top={-93} left={400} />
             <FormControlLabel
                 control={
                     <Checkbox
-                        checked={checked}
-                        onChange={handleChange}
-                        inputProps={{ 'aria-label': 'controlled' }}
+                    checked={checked}
+                    onChange={handleChange}
+                    inputProps={{ 'aria-label': 'controlled' }}
+                    sx={{
+                        color: '#edeffd', // Custom color for the checkbox
+                        '&.Mui-checked': {
+                        color: '#edeffd', // Custom color for the checked state
+                        },
+                    }}
                     />
                 }
                 label="Item Marked for Reording"
@@ -63,8 +69,11 @@ const BoxComponent = () => {
                     position: 'absolute',
                     top: 325, // Adjust this value to move the checkbox up or down
                     left: 880, // Adjust this value to move the checkbox left or right
+                    color: '#edeffd', // Custom color for the label text
                 }}
-            />
+                />
+
+
             <MyButton label="Create" onClick={handleCreate} top='380px' left='200px' />
             <MyButton label="Edit" onClick={handleEdit} top='380px' left='590px' />
             <MyButton label="Delete" onClick={handleDelete} top='380px' left='950px' />

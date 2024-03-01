@@ -4,7 +4,7 @@ const SearchHeader = () => {
     const headerStyles = {
         fontSize: '16px',
         fontWeight: 'bold',
-        color: '#333',
+        color: '#edeffd',
         position: 'relative',
         top: '20px',
         left: '30px',

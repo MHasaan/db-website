@@ -1,44 +1,60 @@
 import React from 'react';
-import { TextField, Box } from '@mui/material';
-import { makeStyles } from '@mui/styles';
-import { Button } from '@nextui-org/react'; // import Next UI Button
+import { TextField, Box, Button } from '@mui/material';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
+const Form = () => {
+  const containerStyles = {
     position: 'absolute',
     top: '80px',
-    left: '527px',
+    left: '590px',
     transform: 'translate(-50%, 0)',
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-}));
+  };
 
-const Form = () => {
-  const classes = useStyles();
+  const inputStyles = {
+    height: '35px',
+    color: '#edeffd',
+    backgroundColor: '#2b2d33', // Dark background color
+    border: 'none', // Remove default border
+    borderRadius: '4px', // Add a subtle border radius
+    padding: '8px', // Adjust padding for better alignment
+    width: '200px',
+    marginRight: '10px',
+  };
+
+  const buttonStyles = {
+    height: '35px',
+    color: '#edeffd',
+    backgroundColor: '#2b2d33', // Dark background color
+    border: 'none', // Remove default border
+    borderRadius: '4px', // Add a subtle border radius
+    padding: '8px', // Adjust padding for better alignment
+    width: '200px',
+    marginRight: '10px',
+  };
 
   return (
-    <Box className={classes.root}>
+    <Box style={containerStyles}>
       <TextField
-        id="outlined-basic"
-        label="Enter to Search"
+        placeholder="Enter to Search"
         variant="outlined"
-        style={{ marginRight: '10px', height: '50px', width: '200px' }}
-        InputLabelProps={{ 
-          style: { top: '-10px' }, 
+        InputLabelProps={{
+          style: {
+            top: '-10px',
+            color: '#edeffd', // Label text color
+          },
         }}
-        InputProps={{ 
-          style: { height: '35px' },
+        InputProps={{
+          style: inputStyles,
         }}
       />
-      <Button 
-        color="primary" 
-        variant="solid" 
-        size="large" 
-        auto 
-        style={{ marginTop: '-15px' }} 
+      <Button
+        color="primary"
+        variant="contained"
+        size="large"
+        style={buttonStyles}
       >
         Submit
       </Button>

@@ -1,10 +1,10 @@
 import React from 'react';
 import TextField from '@mui/material/TextField';
 
-const Name_etc = ({ label, placeholder, top, left }) => {
+const NameEtc = ({ label, placeholder, top, left }) => {
   const containerStyles = {
     display: 'flex',
-    alignItems: 'center', // Vertically align label and text field
+    alignItems: 'center',
     position: 'relative',
     top: `${top}px`,
     left: `${left}px`,
@@ -14,9 +14,19 @@ const Name_etc = ({ label, placeholder, top, left }) => {
     fontSize: '16px',
     fontWeight: 'bold',
     color: '#edeffd',
-    marginRight: '10px', // Add space between label and text field
+    marginRight: '10px',
     position: 'relative',
-    top: '-10px', // Adjust this value as needed to move Text up or down
+    top: '-4px',
+  };
+
+  const inputStyles = {
+    height: '35px',
+    color: '#edeffd',
+    backgroundColor: '#2b2d33', // Dark background color
+    border: 'none', // Remove default border
+    borderRadius: '4px', // Add a subtle border radius
+    padding: '8px', // Adjust padding for better alignment
+    width: '200px',
   };
 
   return (
@@ -25,20 +35,18 @@ const Name_etc = ({ label, placeholder, top, left }) => {
       <TextField
         placeholder={placeholder}
         variant="outlined"
-        style={{
-          marginRight: '10px', 
-          height: '50px', 
-          width: '200px',
-        }}
         InputLabelProps={{
-          style: { top: '-10px' },
+          style: {
+            top: '-10px',
+            color: '#edeffd', // Label text color
+          },
         }}
-        InputProps={{ 
-          style: { height: '35px' },
+        InputProps={{
+          style: inputStyles,
         }}
       />
     </div>
   );
 };
 
-export default Name_etc;
+export default NameEtc;

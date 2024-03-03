@@ -1,29 +1,21 @@
-const { Sequelize } = require('sequelize');
-const tedious = require('tedious');
+const sql = require('mssql/msnodesqlv8');
+var config = {
+  server: "DESKTOP-DTNJB1H\\SQLEXPRESS",
+  database: "my_dummy_table",
+  driver: "msnodesqlv8",
+  options: {
+    trustedConnection: true,
+  }
+}
 
-const sequelize = new Sequelize('Hello', null, null, {
-  host: 'DESKTOP-DTNJB1H\\SQLEXPRESS',
-  dialect: 'mssql',
-  dialectOptions: {
-    options: {
-      useUTC: false,
-      dateFirst: 1,
-      trustedConnection: true,
-      // Add these lines
-      encrypt: true,
-      trustServerCertificate: true,
-      authentication: {
-        type: 'ntlm',
-        options: {
-          userName: 'Ahmadraza',
-          password: '145802',
-        },
-      },
-    },
-  },
-  dialectModule: tedious,
-});
+sql.connect(config, function (err) {
+  if (err) console.log(err); // Corrected typo here
+  var request = new sql.Request();
+  var query = "select * from my_dummy_table";
 
-sequelize.authenticate()
-  .then(() => console.log('Connection has been established successfully.'))
-  .catch(error => console.error('Unable to connect to the database:', error));
+  request.query(query, function (err, records) { // Corrected typo here
+    if (err) console.log(err);
+    else console.log(records);
+
+  })
+})

@@ -65,6 +65,8 @@ export const Input = styled.input`
   padding: 12px 15px;
   margin: 8px 0;
   width: 100%;
+  border-radius: 15px;
+  color: #000;
 `;
 
 export const Button = styled.button`
@@ -76,6 +78,7 @@ export const Button = styled.button`
   font-weight: bold;
   padding: 12px 45px;
   letter-spacing: 1px;
+  margin-top: 20px; 
   text-transform: uppercase;
   transition: transform 80ms ease-in;
   &:active {

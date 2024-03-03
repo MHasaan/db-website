@@ -7,6 +7,7 @@ import BoxComponent from './Information_Box/Box';
 import ResponsiveAppBar from './App_Bar/App_Bar';
 import LoginForm from './Login/LoginForm';
 import './index.css';
+import BlackBackground from './Information_Box/black';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -26,6 +27,7 @@ function App() {
         <Selecting/>
         <Form/>
         <BoxComponent/>
+        <BlackBackground/>
     </NextUIProvider>
   );
 }
